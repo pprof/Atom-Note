@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.profits.atomnotev1.RecordNote">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title: "
+        android:id="@+id/textView6"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        style="@style/CustomText"
+        android:paddingTop="10dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteTitle"
+        android:layout_below="@+id/app_bar"
+        android:layout_toRightOf="@+id/textView6" />
+
+    <EditText
+        style="@style/CustomText"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="440dp"
+        android:id="@+id/recwriteText"
+        android:layout_below="@+id/noteTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text=""
+        android:gravity="start"
+        />
+
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/startrec"
+        android:onClick="onStartRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_mic"
+        fab:fab_colorNormal="@color/fabcolor"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"/>
+
+
+
+</RelativeLayout>

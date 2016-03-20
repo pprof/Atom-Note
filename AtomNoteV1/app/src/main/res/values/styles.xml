@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+
+
+    </style>
+    <style name="AppTheme.Base" parent ="Theme.AppCompat.Light.NoActionBar">
+        <item name = "colorPrimary">@color/primaryColor</item>
+        <item name = "colorPrimaryDark">@color/primaryColorDark</item>
+        <item name = "colorAccent">@color/accentColor</item>
+        <item name = "android:textColor">@color/secondaryText</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name ="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/primaryColor</item>
+
+    </style>
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+        <item name = "android:textColor">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+    <style name="CustomText" parent="">
+
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textColorPrimary">@color/secondaryText</item>
+
+
+    </style>
+    <style name="CustomLine" parent="">
+
+        <item name="colorControlNormal">@color/secondaryText</item>
+
+    </style>
+</resources>

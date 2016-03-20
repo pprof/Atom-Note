@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name ="primaryColor">#8BC34A</color>
+    <color name ="primaryColorDark">#388E3C</color>
+    <color name ="primaryLight">#C8E6C9</color>
+    <color name ="accentColor">#4CAF50</color>
+    <color name ="fabcolor">#8BC34A</color>
+
+    <color name="primaryText">#000000</color>
+    <color name="secondaryText">#727272</color>
+
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="barColor">#212121</color>
+
+    <color name="backgroundColor">#F1F8E9</color>
+
+    <color name="material_blue_500">#AED581</color>
+    <color name="slidingCol">#FFFFFF</color>
+    <color name="indicator">#AED581</color>
+    <color name="tintedit">#E0E0E0</color>
+
+    <color name="primary_pressed">#F44336</color>
+</resources>

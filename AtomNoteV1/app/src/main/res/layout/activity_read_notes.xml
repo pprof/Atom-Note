@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.profits.atomnotev1.ReadNotes">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:id="@id/scrollView">
+
+    <TextView
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/primaryText"
+        android:text=""
+        android:id="@+id/readNotes"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </ScrollView>
+
+    <EditText
+        style="@style/CustomText"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:id="@+id/editTextedit"
+        android:layout_below="@+id/app_bar"
+        android:textColor="@color/primaryText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="text"
+        android:gravity="start"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/savebyt"
+        android:layout_marginLeft="102dp"
+        android:layout_marginStart="102dp"
+        android:layout_below="@+id/editTextedit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="savePro" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelbut"
+        android:layout_alignTop="@+id/savebyt"
+        android:layout_toRightOf="@+id/savebyt"
+        android:layout_toEndOf="@+id/savebyt"
+        android:onClick="cancelPro" />
+
+
+</RelativeLayout>
